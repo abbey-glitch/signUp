@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+#wrapper{
+    height:100vh; 
+    background-color: white;
+    display: grid;
+    justify-items: center;
+}
+input[type='text'], input[type='name'], input[type='tel'], input[type='password']{
+    height:35px;
+}
+form{
+    width:40vw;
+}
+.head{
+    text-align: center;
+    font-size: large;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#formContainer{
+    background-color: whitesmoke;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-shadow: .1em .1em .1em .1em;
+}
+.heading{
+    font-size: 4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(61, 61, 235);
+    letter-spacing: 0pt;
+    text-align: center; margin: .2em auto .2em auto;
+}
+.form_controls{
+    margin:auto .8em 2em .8em;
+}
+.first{
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    column-gap: .5em;
+    margin-bottom: .5em;
+}
+.tel{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: .5em;
+    margin-bottom: .5em;
+}
+.DOB, .gender, .text p + p, .text p:first-child, .sub{
+    margin-bottom: .5em;
+}
+.gender{
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr;
+    column-gap: 2em;
+}
+
+input[type="submit"]{
+    margin-top: .8em;
+    margin-bottom: .8em;
+    background-color: rgb(16, 214, 16);
+    color: azure;
+    height:2rem;
+    border-bottom-left-radius: .5rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+.sex{
+    border:.01em solid black;
+    padding:.2em;
+}
+.footer{
+    text-align: center;
+    display: grid;
+    grid-template-rows: .1fr .1fr;
+    justify-content: center;
+}
+p a, .footer a{
+    text-decoration: none;
+}
+/* paragraph style */
+.word{
+    color: grey;
+}
+/*Shadow root element*/
+.date:host([centered]){
+    position: fixed;
+    background-color: red;
+}
+@media(max-width:760px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        background-color: red;
+    }
+        
+}
+    
